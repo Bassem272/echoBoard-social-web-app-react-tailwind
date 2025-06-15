@@ -7,6 +7,7 @@ import SignupPage from "./pages/SignupPage";
 import CreatePostPage from "./pages/CreatePostPage";
 import LogoutButton from "./components/LogoutButton";
 import PostsHome from "./pages/PostsHome";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/logout" element={<LogoutButton />} />
       </Routes>
+      <Footer />
       <ToastContainer />
     </div>
   );
