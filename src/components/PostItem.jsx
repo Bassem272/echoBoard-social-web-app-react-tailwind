@@ -37,14 +37,14 @@ const PostItem = ({ post, onEdit, onDelete }) => {
           <div className="flex flex-col justify-end items-end space-y-2 min-w-[80px] text-sm text-right">
             <button
               onClick={() => onEdit(post._id)}
-              className="text-blue-600 hover:text-blue-800 flex items-center gap-1 transition"
+              className="text-blue-600 hover:text-blue-800 flex items-center gap-1 transition cursor-pointer"
             >
               <Edit size={16} />
               Edit
             </button>
             <button
               onClick={() => onDelete(post._id)}
-              className="text-red-500 hover:text-red-700 flex items-center gap-1 transition"
+              className="text-red-500 hover:text-red-700 flex items-center gap-1 transition cursor-pointer"
             >
               <Trash2 size={16} />
               Delete
